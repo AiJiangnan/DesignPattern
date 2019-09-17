@@ -2,20 +2,16 @@ package com.ajn.design.pattern.factory;
 
 public class ShapeFactory {
 
-    public Shape getShape(String shapeType) {
-        if (shapeType == null) {
-            return null;
-        }
-        if (shapeType.equalsIgnoreCase("CIRCLE")) {
+    public static Shape getShape(String shapeType) {
+        if ("CIRCLE".equalsIgnoreCase(shapeType)) {
             return new Circle();
         }
-        if (shapeType.equalsIgnoreCase("RECTANGLE")) {
+        if ("RECTANGLE".equalsIgnoreCase(shapeType)) {
             return new Rectangle();
         }
-        if (shapeType.equalsIgnoreCase("SQUARE")) {
+        if ("SQUARE".equalsIgnoreCase(shapeType)) {
             return new Square();
         }
         return null;
     }
-
 }

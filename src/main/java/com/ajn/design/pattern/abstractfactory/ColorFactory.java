@@ -6,14 +6,11 @@ public class ColorFactory extends AbstractFactory {
 
     @Override
     public Color getColor(String color) {
-        if (color == null) {
-            return null;
-        }
-        if (color.equalsIgnoreCase("RED")) {
+        if ("RED".equalsIgnoreCase(color)) {
             return new Red();
-        } else if (color.equalsIgnoreCase("GREEN")) {
+        } else if ("GREEN".equalsIgnoreCase(color)) {
             return new Green();
-        } else if (color.equalsIgnoreCase("BLUE")) {
+        } else if ("BLUE".equalsIgnoreCase(color)) {
             return new Blue();
         }
         return null;
