@@ -7,12 +7,8 @@ package com.ajn.design.pattern.factorymethod;
 public class Main {
 
     public static void main(String[] args) {
-        ShapeFactory factory;
-        factory = new CircleFactory();
-        factory.operate();
-        factory = new RectangleFactory();
-        factory.operate();
-        factory = new SquareFactory();
-        factory.operate();
+        new CircleFactory().operate();
+        new RectangleFactory().operate();
+        new SquareFactory().operate();
     }
 }

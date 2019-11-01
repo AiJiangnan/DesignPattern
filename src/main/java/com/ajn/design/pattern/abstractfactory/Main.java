@@ -6,18 +6,20 @@ public class Main {
 
     public static void main(String[] args) {
         AbstractFactory shapeFactory = FactoryProducer.getFactory("SHAPE");
-        Shape shape1 = shapeFactory.getShape("CIRCLE");
-        shape1.draw();
-        Shape shape2 = shapeFactory.getShape("RECTANGLE");
-        shape2.draw();
-        Shape shape3 = shapeFactory.getShape("SQUARE");
-        shape3.draw();
+        Shape shape;
+        shape = shapeFactory.getShape("CIRCLE");
+        shape.draw();
+        shape = shapeFactory.getShape("RECTANGLE");
+        shape.draw();
+        shape = shapeFactory.getShape("SQUARE");
+        shape.draw();
         AbstractFactory colorFactory = FactoryProducer.getFactory("COLOR");
-        Color color1 = colorFactory.getColor("RED");
-        color1.fill();
-        Color color2 = colorFactory.getColor("GREEN");
-        color2.fill();
-        Color color3 = colorFactory.getColor("BLUE");
-        color3.fill();
+        Color color;
+        color = colorFactory.getColor("RED");
+        color.fill();
+        color = colorFactory.getColor("GREEN");
+        color.fill();
+        color = colorFactory.getColor("BLUE");
+        color.fill();
     }
 }
